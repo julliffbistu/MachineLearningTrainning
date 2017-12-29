@@ -1,0 +1,144 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+E:\Èí¼þ°ü\uCOSII_keil_2013_stablize170225\Cortex-M3_Execute_for_lpc1700.uvproj
+Project File Date:  06/06/2017
+
+<h2>Output:</h2>
+Rebuild target 'DebugInFlash'
+compiling main.c...
+USER_CODE\main.c(130): warning:  #223-D: function "InitDxlControl" declared implicitly
+        InitDxlControl();    
+USER_CODE\main.c(134): warning:  #223-D: function "HandleDXLControl" declared implicitly
+        EnableTimerInterrupt(HandleDXLControl());
+USER_CODE\main.c(150): warning:  #223-D: function "WaitCOMWholePacket" declared implicitly
+                ret=WaitCOMWholePacket(packet,sizeof(packet),0);
+USER_CODE\main.c(151): warning:  #223-D: function "HandleInstPacket" declared implicitly
+                if((ret!=0xffff)&&0<(ret=HandleInstPacket(packet,ret)))
+USER_CODE\main.c(212): warning:  #223-D: function "InitSci" declared implicitly
+        InitSci();
+USER_CODE\main.c(213): warning:  #223-D: function "SSP0_init" declared implicitly
+        SSP0_init();
+USER_CODE\main.c(214): warning:  #223-D: function "InitAdc" declared implicitly
+        InitAdc();
+USER_CODE\main.c(215): warning:  #223-D: function "I2CInit" declared implicitly
+        I2CInit();
+USER_CODE\main.c: 8 warnings, 0 errors
+compiling com_protocol.c...
+USER_CODE\com_protocol.c(123): warning:  #223-D: function "ServoTorqueEnable" declared implicitly
+                ServoTorqueEnable(TRUE);
+USER_CODE\com_protocol.c(127): warning:  #223-D: function "ServoTorqueEnable" declared implicitly
+                ServoTorqueEnable(FALSE);
+USER_CODE\com_protocol.c(158): warning:  #223-D: function "ServoTorqueEnable" declared implicitly
+                        ServoTorqueEnable(TRUE);                                                                                
+USER_CODE\com_protocol.c(166): warning:  #223-D: function "ServoTorqueEnable" declared implicitly
+                        ServoTorqueEnable(FALSE);
+USER_CODE\com_protocol.c(206): warning:  #223-D: function "TakeSingleAction" declared implicitly
+                                TakeSingleAction(
+USER_CODE\com_protocol.c(358): warning:  #223-D: function "GetSensorRawResult" declared implicitly
+                        GetSensorRawResult(ps);
+USER_CODE\com_protocol.c(385): warning:  #223-D: function "HandleTorsoPose" declared implicitly
+                        HandleTorsoPose(pinput,poutput);
+USER_CODE\com_protocol.c(403): warning:  #223-D: function "StoreCalibrationToFlash" declared implicitly
+                        StoreCalibrationToFlash(psc);
+USER_CODE\com_protocol.c(432): warning:  #223-D: function "GetGeneratedRobotpose" declared implicitly
+                        GetGeneratedRobotpose(pdata,pr);
+USER_CODE\com_protocol.c: 9 warnings, 0 errors
+compiling uart_driver.c...
+compiling dxl_protocol.c...
+USER_CODE\dxl_protocol.c(122): warning:  #223-D: function "ChangeDXLDirection" declared implicitly
+                        ChangeDXLDirection(RS485TX);
+USER_CODE\dxl_protocol.c(134): warning:  #223-D: function "GetNextConfigurationWithPoseAndStablization" declared implicitly
+        while(-2==(ret=GetNextConfigurationWithPoseAndStablization(cmd,sizeof(cmd))));
+USER_CODE\dxl_protocol.c(142): warning:  #223-D: function "ChangeDXLDirection" declared implicitly
+                        ChangeDXLDirection(RS485TX);
+USER_CODE\dxl_protocol.c(178): warning:  #223-D: function "ChangeDXLDirection" declared implicitly
+                ChangeDXLDirection(RS485TX);
+USER_CODE\dxl_protocol.c(207): warning:  #223-D: function "ChangeDXLDirection" declared implicitly
+                ChangeDXLDirection(RS485TX);
+USER_CODE\dxl_protocol.c(240): warning:  #223-D: function "ChangeDXLDirection" declared implicitly
+                ChangeDXLDirection(RS485TX);
+USER_CODE\dxl_protocol.c: 6 warnings, 0 errors
+compiling flash_driver.c...
+compiling adc_driver.c...
+compiling signal_manage.c...
+compiling sensor_processor.c...
+compiling fast_math.c...
+compiling flash_filesystem.c...
+USER_CODE\flash_filesystem.c(107): warning:  #223-D: function "ReadFlashPage" declared implicitly
+                        ReadFlashPage(addr,blocks[i].buffer,SINGLE_PAGE_SIZE);
+USER_CODE\flash_filesystem.c(156): warning:  #223-D: function "WriteFlashPage" declared implicitly
+                                WriteFlashPage(addr,blocks[i].buffer,SINGLE_PAGE_SIZE);
+USER_CODE\flash_filesystem.c(190): warning:  #223-D: function "WriteFlashPage" declared implicitly
+                                WriteFlashPage(addr,blocks[i].buffer,SINGLE_PAGE_SIZE);
+USER_CODE\flash_filesystem.c(233): warning:  #223-D: function "WriteFlashPage" declared implicitly
+                                WriteFlashPage(addr,blocks[i].buffer,SINGLE_PAGE_SIZE);
+USER_CODE\flash_filesystem.c: 4 warnings, 0 errors
+compiling fast_kinematics.c...
+compiling gait_generate.c...
+USER_CODE\gait_generate.c(1090): warning:  #111-D: statement is unreachable
+        return 0;
+USER_CODE\gait_generate.c(2296): warning:  #223-D: function "GetCOMHead" declared implicitly
+                        pret=(DSP_STATUS_PACKET *)GetCOMHead(buffer);
+USER_CODE\gait_generate.c(2300): warning:  #223-D: function "ConstructCOMPacket" declared implicitly
+                        ret=ConstructCOMPacket(pret);
+USER_CODE\gait_generate.c(2308): warning:  #223-D: function "TakeSingleAction" declared implicitly
+                TakeSingleAction(20,512,DEFAULT_TURNING_SPEED);
+USER_CODE\gait_generate.c(2420): warning:  #223-D: function "GetCOMHead" declared implicitly
+                        pret=(DSP_STATUS_PACKET *)GetCOMHead(buffer);
+USER_CODE\gait_generate.c(2424): warning:  #223-D: function "ConstructCOMPacket" declared implicitly
+                        ret=ConstructCOMPacket(pret);
+USER_CODE\gait_generate.c(2900): warning:  #223-D: function "TakeSingleAction" declared implicitly
+                TakeSingleAction(20,(Uint16)angle,(Uint16)speed);
+USER_CODE\gait_generate.c(2920): warning:  #223-D: function "TakeSingleAction" declared implicitly
+                TakeSingleAction(21,(Uint16)angle,(Uint16)speed);
+USER_CODE\gait_generate.c: 8 warnings, 0 errors
+compiling i2c_driver.c...
+compiling matrix.c...
+USER_CODE\ahrs\matrix.c(14): error:  #5: cannot open source input file "lpc17xx.h": No such file or directory
+  #include "lpc17xx.h"
+USER_CODE\ahrs\matrix.c: 0 warnings, 1 error
+compiling realDcm.c...
+USER_CODE\ahrs\realDcm.c(13): error:  #5: cannot open source input file "lpc17xx.h": No such file or directory
+  #include "lpc17xx.h"
+USER_CODE\ahrs\realDcm.c: 0 warnings, 1 error
+compiling vector.c...
+USER_CODE\ahrs\vector.c(13): error:  #5: cannot open source input file "lpc17xx.h": No such file or directory
+  #include "lpc17xx.h"
+USER_CODE\ahrs\vector.c: 0 warnings, 1 error
+compiling LPC1700PinCfg.c...
+ZY_CODE\Startup\LPC1700PinCfg.c(39): warning:  #61-D: integer operation result is out of range
+      PINSEL0  = (P0_15_FNUC << 30)|
+ZY_CODE\Startup\LPC1700PinCfg.c(61): warning:  #61-D: integer operation result is out of range
+      PINSEL3  = (P1_31_FNUC << 30)|(P1_30_FNUC << 28)|(P1_29_FNUC << 26)|(P1_28_FNUC << 24)| 
+ZY_CODE\Startup\LPC1700PinCfg.c: 2 warnings, 0 errors
+compiling target.c...
+compiling vector_table.c...
+compiling zy_if.c...
+assembling rt_sys_s.s...
+compiling rt_sys_c.c...
+compiling OS_MBOX.C...
+compiling OS_MEM.C...
+compiling OS_MUTEX.C...
+compiling OS_Q.C...
+compiling OS_SEM.C...
+compiling OS_TASK.C...
+ZY_CODE\uCOS-II\OS_TASK.C(370): warning:  #177-D: variable "self" was declared but never referenced
+      BOOLEAN       self;
+ZY_CODE\uCOS-II\OS_TASK.C: 1 warning, 0 errors
+compiling OS_TIME.C...
+compiling OS_CORE.C...
+compiling OS_FLAG.C...
+compiling Os_cpu_c.c...
+".\out\Cortex-M3 Execute for lpc1700.axf" - 3 Error(s), 38 Warning(s).
+Target not created
+compiling matrix.c...
+USER_CODE\ahrs\matrix.c(14): error:  #5: cannot open source input file "lpc17xx.h": No such file or directory
+  #include "lpc17xx.h"
+USER_CODE\ahrs\matrix.c: 0 warnings, 1 error
+"USER_CODE\ahrs\matrix.c" - 1 Error(s), 0 Warning(s).
+</pre>
+</body>
+</html>
